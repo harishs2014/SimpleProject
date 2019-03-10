@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
 	    strict=true,
 	    dryRun=false,
 		tags= {"@DemoTest"},
-	        plugin = { "pretty", "html:target/cucumber-reports" },
+	         plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json","junit:target/cucumber-reports/Cucumber.xml","html:target/cucumber-reports"},
 		glue={""} 
 		)
 
